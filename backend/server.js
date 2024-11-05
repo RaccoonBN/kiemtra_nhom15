@@ -6,6 +6,7 @@ const categoriesRoutes = require('./routes/admin/categories');
 const brandsRoutes = require('./routes/admin/brands');
 const productsRoutes = require('./routes/admin/products');
 const productRoutes = require('./routes/public/productRoutes');
+const categoryRoutes = require('./routes/categoryRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -18,6 +19,7 @@ app.use('/api/admin/categories', categoriesRoutes);
 app.use('/api/admin/brands', brandsRoutes);
 app.use('/api/admin/products', productsRoutes);
 app.use('/api', productRoutes);
+app.use('/api', categoryRoutes);
 
 app.use(express.static(path.join(__dirname, 'uploads')));
 
