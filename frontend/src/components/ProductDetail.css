@@ -1,0 +1,82 @@
+.p{
+    font-size: 5em; /* Kích thước chữ lớn hơn cho dễ nhìn */
+}
+.product-detail {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-content {
+    display: flex; /* Sử dụng Flexbox */
+    align-items: flex-start; /* Căn chỉnh các phần tử theo chiều dọc */
+    justify-content: center; /* Căn giữa nội dung */
+    margin-top: 20px; /* Khoảng cách phía trên */
+}
+
+.product-image {
+    width: 300px; /* Chiều rộng của hình ảnh */
+    height: auto; /* Chiều cao tự động */
+    margin-right: 20px; /* Khoảng cách giữa hình ảnh và thông tin sản phẩm */
+}
+
+.product-info {
+    text-align: center; /* Căn trái cho thông tin sản phẩm */
+}
+
+.button-group {
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 10px; /* Khoảng cách giữa các nút và phần quantity */
+    margin-top: 20px; /* Khoảng cách phía trên để tách biệt với nội dung khác */
+}
+
+/* Nút Thêm vào giỏ hàng */
+.add-to-cart {
+    background-color: white; /* Nền trắng */
+    color: black; /* Chữ đen */
+    border: 2px solid gray; /* Viền xám */
+    padding: 12px 20px; /* Padding cho nút */
+    cursor: pointer; /* Con trỏ khi hover */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi */
+}
+
+.add-to-cart:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Nút Mua ngay */
+.buy-now-button {
+    background-color: #000; /* Màu nền cho nút Mua ngay */
+    color: white; /* Màu chữ */
+    border: 2px solid gray; /* Viền xám */
+    padding: 12px 20px; /* Padding cho nút */
+    cursor: pointer; /* Con trỏ khi hover */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi */
+}
+
+.buy-now-button:hover {
+    background-color: #fff; /* Màu nền khi hover */
+    color: #000;
+}
+
+.quantity {
+    margin-left: 100px;
+    display: flex; /* Sử dụng Flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 10px; /* Khoảng cách giữa các nút và số lượng */
+}
+
+.quantity-display {
+    font-size: 1.25em; /* Kích thước chữ lớn hơn cho dễ nhìn */
+}
+.quantity button {
+    width: 100px; /* Đặt chiều rộng cố định cho nút */
+    padding: 2px 4px; /* Giảm padding cho nút */
+    font-size: 1.3em; /* Giảm kích thước chữ */
+    cursor: pointer; /* Hiển thị con trỏ khi hover */
+    background-color: white; /* Nền trắng cho nút */
+}
+
+.quantity button:hover {
+    background-color: #f0f0f0; /* Hiệu ứng hover với nền sáng hơn */
+}
