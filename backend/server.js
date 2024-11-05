@@ -6,7 +6,7 @@ const categoriesRoutes = require('./routes/admin/categories');
 const brandsRoutes = require('./routes/admin/brands');
 const productsRoutes = require('./routes/admin/products');
 const productRoutes = require('./routes/public/productRoutes');
-const categoryRoutes = require('./routes/categoryRoutes');
+const categoryRoutes = require('./routes/public/categoryRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
