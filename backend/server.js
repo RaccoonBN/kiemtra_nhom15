@@ -5,6 +5,7 @@ const path = require('path');
 const categoriesRoutes = require('./routes/admin/categories');
 const brandsRoutes = require('./routes/admin/brands');
 const productsRoutes = require('./routes/admin/products');
+const productRoutes = require('./routes/public/productRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -16,6 +17,8 @@ app.use(bodyParser.json());
 app.use('/api/admin/categories', categoriesRoutes);
 app.use('/api/admin/brands', brandsRoutes);
 app.use('/api/admin/products', productsRoutes);
+app.use('/api', productRoutes);
+
 app.use(express.static(path.join(__dirname, 'uploads')));
 
 app.listen(PORT, () => {
